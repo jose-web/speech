@@ -12,6 +12,18 @@ body{
 
 #microphone{
     margin:auto;
+    background-color: transparent;
+    padding: 2vw;
+    border:0 solid transparent;
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 1vw rgb(30, 30, 30);
+}
+
+#microphone:hover{
+    border:0.3vw solid white;
+
 }
 
 #microphone img{

@@ -8,11 +8,16 @@ window.onload = () => {
     recognition.start()
 }
 
+const microphone = document.getElementById("microphone")
+
+microphone.addEventListener("click",()=>{
+    recognition.start()
+})
+
 recognition.onresult = (event) => {
     let current = event.resultIndex
     let transcript = event.results[current][0].transcript
     console.log(transcript)
-    speak(transcript)
 }
 
 function speak(message){
